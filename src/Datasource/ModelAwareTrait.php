@@ -87,7 +87,7 @@ trait ModelAwareTrait
      * @throws \InvalidArgumentException When using a type that has not been registered.
      * @throws \UnexpectedValueException If no model type has been defined
      */
-    public function loadModel($modelClass = null, $modelType = null)
+    public function loadModel(?string $modelClass = null, ?string $modelType = null)
     {
         if ($modelClass === null) {
             $modelClass = $this->modelClass;
